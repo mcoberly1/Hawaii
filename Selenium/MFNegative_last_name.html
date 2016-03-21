@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.hawaiianairlines.co.jp/" />
+<title>Valid Check-in</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Valid Check-in</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--Verify Page Title-->
+<tr>
+	<td>assertTitle</td>
+	<td>ハワイアン航空公式日本語サイト</td>
+	<td></td>
+</tr>
+<!--Verify manage/check-in link-->
+<tr>
+	<td>highlight</td>
+	<td>//div/ul/li[2]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/ul/li[2]/a/span</td>
+	<td>ご搭乗</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div/ul/li[2]/a/span</td>
+	<td></td>
+</tr>
+<!--Click manage/check-in link-->
+<tr>
+	<td>click</td>
+	<td>//div/ul/li[2]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>link=チェックイン</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=チェックイン</td>
+	<td>チェックイン</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.ng-scope &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=チェックイン</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>ウェブチェックイン</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>ウェブチェックイン</td>
+	<td></td>
+</tr>
+<!--Empty last_name Field - Please enter-->
+<tr>
+	<td>highlight</td>
+	<td>name=code_or_ticket</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=code_or_ticket</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=code_or_ticket</td>
+	<td>12345678901234</td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>name=last_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=last_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>name=last_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=label.ha-label &gt; em</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label.ha-label &gt; em</td>
+	<td>入力してください</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=label.ha-label &gt; em</td>
+	<td></td>
+</tr>
+<!--Continue Test Steps....-->
+</tbody></table>
+</body>
+</html>

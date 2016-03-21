@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.hawaiianairlines.co.jp/" />
+<title>Valid Check-in</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Valid Check-in</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--Verify Page Title-->
+<tr>
+	<td>assertTitle</td>
+	<td>ハワイアン航空公式日本語サイト</td>
+	<td></td>
+</tr>
+<!--Verify manage/check-in link-->
+<tr>
+	<td>highlight</td>
+	<td>//div/ul/li[2]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/ul/li[2]/a/span</td>
+	<td>ご搭乗</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div/ul/li[2]/a/span</td>
+	<td></td>
+</tr>
+<!--Click manage/check-in link-->
+<tr>
+	<td>click</td>
+	<td>//div/ul/li[2]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>link=チェックイン</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=チェックイン</td>
+	<td>チェックイン</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.ng-scope &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=チェックイン</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>ウェブチェックイン</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>ウェブチェックイン</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=img[alt=&quot;Hawaiian Airlines&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=img[alt=&quot;Hawaiian Airlines&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=img[alt=&quot;Hawaiian Airlines&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Hawaiian Airlines&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>link=ヘルプ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=ヘルプ</td>
+	<td>ヘルプ</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=ヘルプ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>link=ご利用規約</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=ご利用規約</td>
+	<td>ご利用規約</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=ご利用規約</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>link=お問い合わせ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=お問い合わせ</td>
+	<td>お問い合わせ</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=お問い合わせ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=i.ha-icon.fontIcon16-search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.ha-icon.fontIcon16-search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>link=サイト内検索</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.label</td>
+	<td>サイト内検索</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=サイト内検索</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=i.icon-flag-26--japan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=i.icon-flag-26--japan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon-flag-26--japan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=a.region.link &gt; span.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=a.region.link &gt; span.label</td>
+	<td>JPY</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.region.link &gt; span.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=JPY</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=i.icon-flag-26--usa</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon-flag-26--usa</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>link=United States (USD)</td>
+	<td>United States (USD)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=United States (USD)</td>
+	<td>United States (USD)</td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=a.region.flag-link &gt; i.icon-flag-26--japan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.region.flag-link &gt; i.icon-flag-26--japan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>//li[2]/a/span</td>
+	<td>日本 (JPY)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//li[2]/a/span</td>
+	<td>日本 (JPY)</td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=i.icon-flag-26--southkorea</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon-flag-26--southkorea</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>//li[3]/a/span</td>
+	<td>한국어 (KRW)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//li[3]/a/span</td>
+	<td>한국어 (KRW)</td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=i.icon-flag-26--australia</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon-flag-26--australia</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>//li[4]/a/span</td>
+	<td>Australia (AUD)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//li[4]/a/span</td>
+	<td>Australia (AUD)</td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=i.icon-flag-26--newzealand</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon-flag-26--newzealand</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>//li[6]/ul/li[5]/a/span</td>
+	<td>New Zealand (NZD)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//li[6]/ul/li[5]/a/span</td>
+	<td>New Zealand (NZD)</td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=i.icon-flag-26--china</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon-flag-26--china</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>//li[6]/ul/li[6]/a/span</td>
+	<td>中国 (CNY)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//li[6]/ul/li[6]/a/span</td>
+	<td>中国 (CNY)</td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=i.icon-flag-26--taiwan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=i.icon-flag-26--taiwan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>//li[7]/a/span</td>
+	<td>台灣 (NT$)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//li[7]/a/span</td>
+	<td>台灣 (NT$)</td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=a.region.link &gt; span.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=JPY</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>//div/ul/li[1]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.ha-nav.nav-li-inner-title</td>
+	<td>ご予約</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.ha-nav.nav-li-inner-title</td>
+	<td></td>
+</tr>
+<!--Verify manage/check-in link-->
+<tr>
+	<td>highlight</td>
+	<td>//div/ul/li[2]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/ul/li[2]/a/span</td>
+	<td>ご搭乗</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div/ul/li[2]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>//div/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/ul/li[3]/a/span</td>
+	<td>ハワイアン航空について</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>//div/ul/li[4]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div/ul/li[4]/a/span</td>
+	<td>ハワイガイド</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=ハワイガイド</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=span.nav-li--account-title</td>
+	<td>HawaiianMiles会員ログイン</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.nav-li--account-title</td>
+	<td>HawaiianMiles会員ログイン</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span.nav-li--account-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>link=ログイン</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=ログイン</td>
+	<td>ログイン</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=ログイン</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>link=新規入会</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=新規入会</td>
+	<td>新規入会</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=新規入会</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=em</td>
+	<td>ウェブチェックイン</td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>ウェブチェックイン</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=em</td>
+	<td>ウェブチェックイン</td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>//header</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//header</td>
+	<td>ウェブチェックイン</td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=p</td>
+	<td>ご出発24時間～90分前までウェブチェックインが可能です。チェックインの際に座席指定や座席変更、手荷物料金のお支払いもできます。</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=p</td>
+	<td>ご出発24時間～90分前までウェブチェックインが可能です。チェックインの際に座席指定や座席変更、手荷物料金のお支払いもできます。</td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>name=code_or_ticket</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=code_or_ticket</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>name=last_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=last_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>link=予約番号、またはチケット番号をお忘れですか？</td>
+	<td>予約番号、またはチケット番号をお忘れですか？</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=予約番号、またはチケット番号をお忘れですか？</td>
+	<td>予約番号、またはチケット番号をお忘れですか？</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=予約番号、またはチケット番号をお忘れですか？</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=small</td>
+	<td>exact:*お電話にて仮予約して保持された場合、ウェブサイトでの本予約は受け付けておりません。 予約センターまでお電話の上、ご予約を確定してください。</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=small</td>
+	<td>exact:*お電話にて仮予約して保持された場合、ウェブサイトでの本予約は受け付けておりません。 予約センターまでお電話の上、ご予約を確定してください。</td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>link=予約センターまでお電話の上、ご予約を確定してください。</td>
+	<td>予約センターまでお電話の上、ご予約を確定してください。</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=予約センターまでお電話の上、ご予約を確定してください。</td>
+	<td>予約センターまでお電話の上、ご予約を確定してください。</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=予約センターまでお電話の上、ご予約を確定してください。</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>css=i.ha-icon.fontIcon20-circleUp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=i.ha-icon.fontIcon20-circleUp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>link=トップに戻る</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=トップに戻る</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

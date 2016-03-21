@@ -1,0 +1,21 @@
+using NUnit.Framework;
+using NUnit.Core;
+
+namespace SeleniumTests
+{
+    public class MFTestSuite_cSharp
+    {
+        [Suite] public static TestSuite Suite
+        {
+            get
+            {
+                TestSuite suite = new TestSuite("MFTestSuite_cSharp");
+                suite.Add(new MFElements());
+                suite.Add(new MFPositive());
+                suite.Add(new MFNegative_code_or_ticket());
+                suite.Add(new MFNegative_last_name());
+                return suite;
+            }
+        }
+    }
+}
