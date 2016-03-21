@@ -46,12 +46,10 @@ namespace SeleniumTests
             // Verify Page Title
             Assert.AreEqual("ハワイアン航空公式日本語サイト", driver.Title);
             // Verify manage/check-in link
-            // ERROR: Caught exception [ERROR: Unsupported command [highlight | //div/ul/li[2]/a/span | ]]
             Assert.AreEqual("ご搭乗", driver.FindElement(By.XPath("//div/ul/li[2]/a/span")).Text);
             Assert.IsTrue(IsElementPresent(By.XPath("//div/ul/li[2]/a/span")));
             // Click manage/check-in link
             driver.FindElement(By.XPath("//div/ul/li[2]/a/span")).Click();
-            // ERROR: Caught exception [ERROR: Unsupported command [highlight | link=チェックイン | ]]
             Assert.AreEqual("チェックイン", driver.FindElement(By.LinkText("チェックイン")).Text);
             Assert.IsTrue(IsElementPresent(By.CssSelector("a.ng-scope > span")));
             driver.FindElement(By.LinkText("チェックイン")).Click();
@@ -66,15 +64,12 @@ namespace SeleniumTests
                 Thread.Sleep(1000);
             }
             Assert.AreEqual("ウェブチェックイン", driver.Title);
-            // ERROR: Caught exception [ERROR: Unsupported command [highlight | name=code_or_ticket | ]]
             Assert.IsTrue(IsElementPresent(By.Name("code_or_ticket")));
             driver.FindElement(By.Name("code_or_ticket")).Clear();
             driver.FindElement(By.Name("code_or_ticket")).SendKeys("1732142317055");
-            // ERROR: Caught exception [ERROR: Unsupported command [highlight | name=last_name | ]]
             Assert.IsTrue(IsElementPresent(By.Name("last_name")));
             driver.FindElement(By.Name("last_name")).Clear();
             driver.FindElement(By.Name("last_name")).SendKeys("known");
-            // ERROR: Caught exception [ERROR: Unsupported command [highlight | name=submit | ]]
             Assert.IsTrue(IsElementPresent(By.Name("submit")));
             driver.FindElement(By.Name("submit")).Click();
             for (int second = 0;; second++) {
